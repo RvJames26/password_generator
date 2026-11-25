@@ -7,7 +7,9 @@ class PassReq:
         self.special = int(input("Special character requirements: "))
 
     def return_req(self):
-        return self.character
-        return self.numbers
-        return self.upper
-        return self.special
+        return {
+            "character": self.character,
+            "numbers": self.numbers,
+            "upper": self.upper,
+            "special": self.special,
+        }
